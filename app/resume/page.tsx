@@ -7,9 +7,9 @@ import { resume } from "@/lib/constants/resume";
 export default function Page() {
   return (
     <Suspense fallback={<div>Loading PDF viewer...</div>}>
-      <PDFViewer className="min-h-screen w-full">
-        <ResumeDocument resume={resume} />
-      </PDFViewer>
+        <PDFViewer className="min-h-screen w-full">
+          <ResumeDocument resume={resume} />
+        </PDFViewer>
     </Suspense>
   );
 }
